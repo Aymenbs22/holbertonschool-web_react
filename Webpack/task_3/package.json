@@ -4,6 +4,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "webpack-dev-server --open",
     "build": "webpack"
   },
   "keywords": [],
@@ -17,12 +18,13 @@
     "image-webpack-loader": "^4.2.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
     "jquery": "^3.3.1",
     "lodash": "^4.17.21",
-    "start-dev": "^1.0.0"
+    "start-dev": "^0.0.0"
   },
   "description": ""
 }
