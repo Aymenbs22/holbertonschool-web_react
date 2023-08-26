@@ -10,6 +10,7 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'public'),
   },
+  devtool: 'inline-source-map',
   devServer: {
     static: {
       directory: path.join(__dirname, './public'),
