@@ -17,6 +17,9 @@ module.exports = {
     compress: true,
     port: 8564,
   },
+  splitChunks: {
+    chunks: 'all',
+  },
   rules: [
     {
       test: /\.css$/i,
