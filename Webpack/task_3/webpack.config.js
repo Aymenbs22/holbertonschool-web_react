@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path');
 
 module.exports = {
-  entry: './js/dashboard_main.js',
+  entry: './modules/header/header.js", "./modules/body/body.js", "./modules/footer/footer.js',
   mode: 'development',
   output: {
     filename: '[name].bundle.js',
