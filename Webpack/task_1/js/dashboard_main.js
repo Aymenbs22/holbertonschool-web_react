@@ -13,7 +13,7 @@ function updateCounter(){
     $('#count').text(`${count} clicks on the button`);
 }
 
-jQuery(element).on('click', _.debounce(updateCounter(), 300, {
+jQuery(element).on('click', _.debounce(updateCounter(), 500, {
     'leading': true,
     'trailing': false
 }));
