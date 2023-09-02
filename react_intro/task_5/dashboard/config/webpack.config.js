@@ -18,6 +18,18 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader", "image-webpack-loader"],
+      },
+      {
+        test: /\.(?:js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
       }
     ]
   },
