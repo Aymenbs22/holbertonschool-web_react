@@ -1,5 +1,11 @@
-import './Header.css';
 import { getFullYear,getFooterCopy } from './utils';
+import { StyleSheet, css } from 'aphrodite';
+
+const styles = StyleSheet.create({
+    bodySectionWithMargin: {
+        marginBottom: '40px'
+  }
+  })
 
 function Header() {
   return (
