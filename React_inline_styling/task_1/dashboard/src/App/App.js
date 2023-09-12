@@ -10,20 +10,20 @@ import BodySectionWithMarginBottom from '../BodySectionWithMarginBottom/BodySect
 import BodySection from '../BodySection/BodySection';
 import { StyleSheet, css } from 'aphrodite';
 
-const styles = StyleSheet.create({
-  body: {
-    margin: '60px', marginright: '1608px'
-  },
+const bodys = StyleSheet.create({
+  body: {margin: '60px', marginright: '1608px'}
+})
 
+const footerstyles = StyleSheet.create({
   footer: {
     width: '100%',
     display: 'flex',
     bottom: '0px',
-    justifycontent: 'center',
+    justifyContent: 'center',
     position: 'fixed',
-    bordertop: '2px solid #ee5757',
+    borderTop: '2px solid #ee5757'
   }
-});
+})
 
 class App extends React.Component {
  
@@ -34,7 +34,7 @@ class App extends React.Component {
           <Notifications listNotifications={listNotifications}/>
           <div className="App">
           <Header />
-          <div className={css(styles.body)}>
+          <div className={css(bodys.body)}>
           {isLoggedIn ? (
             <BodySectionWithMarginBottom title="Course list">
             <CourseList />
@@ -48,7 +48,7 @@ class App extends React.Component {
 
             </BodySection>
           </div>
-          <div className={css(styles.footer)}>
+          <div className={css(footerstyles.footer)}>
           <Footer />
           </div>
           </div>
