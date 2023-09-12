@@ -1,4 +1,3 @@
-import './App.css';
 import { getFullYear,getFooterCopy } from './utils';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
@@ -8,6 +7,13 @@ import PropTypes from 'prop-types';
 import CourseList from '../CourseList/CourseList';
 import BodySectionWithMarginBottom from '../BodySectionWithMarginBottom/BodySectionWithMarginBottom';
 import BodySection from '../BodySection/BodySection';
+import { StyleSheet, css } from 'aphrodite';
+
+const styles = StyleSheet.create({
+  body: {
+    margin: '60px'
+}
+})
 
 class App extends React.Component {
  
@@ -18,7 +24,7 @@ class App extends React.Component {
           <Notifications listNotifications={listNotifications}/>
           <div className="App">
           <Header />
-          <div className="App-body">
+          <div className={css(styles.body)}>
           {isLoggedIn ? (
             <BodySectionWithMarginBottom title="Course list">
             <CourseList />
