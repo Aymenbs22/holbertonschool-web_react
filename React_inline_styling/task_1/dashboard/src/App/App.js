@@ -8,22 +8,6 @@ import PropTypes from 'prop-types';
 import CourseList from '../CourseList/CourseList';
 import BodySectionWithMarginBottom from '../BodySectionWithMarginBottom/BodySectionWithMarginBottom';
 import BodySection from '../BodySection/BodySection';
-import { StyleSheet, css } from 'aphrodite';
-
-const bodys = StyleSheet.create({
-  body: {margin: '60px', marginright: '1608px'}
-})
-
-const footerstyles = StyleSheet.create({
-  footer: {
-    width: '100%',
-    display: 'flex',
-    bottom: '0px',
-    justifyContent: 'center',
-    position: 'fixed',
-    borderTop: '2px solid #ee5757'
-  }
-})
 
 class App extends React.Component {
  
@@ -34,7 +18,7 @@ class App extends React.Component {
           <Notifications listNotifications={listNotifications}/>
           <div className="App">
           <Header />
-          <div className={css(bodys.body)}>
+          <div className="App-body">
           {isLoggedIn ? (
             <BodySectionWithMarginBottom title="Course list">
             <CourseList />
@@ -48,7 +32,7 @@ class App extends React.Component {
 
             </BodySection>
           </div>
-          <div className={css(footerstyles.footer)}>
+          <div className="App-footer">
           <Footer />
           </div>
           </div>
