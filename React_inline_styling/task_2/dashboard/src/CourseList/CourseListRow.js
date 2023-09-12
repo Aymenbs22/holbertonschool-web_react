@@ -1,5 +1,13 @@
+import { StyleSheet, css } from 'aphrodite';
 const backgroundColorth = { backgroundColor: '#deb5b545'};
 const backgroundColortr = { backgroundColor: '#f5f5f5ab'};
+
+const styles = StyleSheet.create({
+    bodySectionWithMargin: {
+        marginBottom: '40px'
+  }
+  })
+
 function CourseListRow({isHeader, textFirstCell, textSecondCell}){
         if (isHeader) {
             if (textFirstCell === null){
