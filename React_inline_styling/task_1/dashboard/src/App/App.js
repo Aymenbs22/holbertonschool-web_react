@@ -15,6 +15,12 @@ const styles = StyleSheet.create({
 }
 })
 
+const styles2 = StyleSheet.create({
+  footer: {
+    width: '100%'
+}
+})
+
 class App extends React.Component {
  
  
@@ -38,7 +44,7 @@ class App extends React.Component {
 
             </BodySection>
           </div>
-          <div className="App-footer">
+          <div className={css(styles2.footer)}>
           <Footer />
           </div>
           </div>
