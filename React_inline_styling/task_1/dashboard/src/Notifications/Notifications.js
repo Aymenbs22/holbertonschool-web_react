@@ -1,8 +1,15 @@
 import React from 'react';
-import './Notifications.css';
 import { getLatestNotification } from './utils';
 import NotificationItem from './NotificationItem';
 import PropTypes from 'prop-types';
+import { StyleSheet, css } from 'aphrodite';
+
+const styles = StyleSheet.create({
+    bodySectionWithMargin: {
+        marginBottom: '40px'
+  }
+  })
+
 
 
 class Notifications extends React.Component {
