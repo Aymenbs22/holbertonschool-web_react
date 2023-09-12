@@ -1,5 +1,11 @@
 import CourseListRow from "./CourseListRow";
 
+const styles = StyleSheet.create({
+    bodySectionWithMargin: {
+        marginBottom: '40px'
+  }
+  })
+
 function CourseList(){
     return (
         <table id="CourseList">
