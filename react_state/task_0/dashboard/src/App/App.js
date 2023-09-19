@@ -47,7 +47,7 @@ class App extends React.Component {
           <Notifications listNotifications={listNotifications}/>
           <div className="App">
           <Header />
-          <div className={css(styles.body)} displayDrawer={displayDrawer}
+          <div className={css(styles.body)} displayDrawer={this.displayDrawer}
           handleDisplayDrawer={this.handleDisplayDrawer}
           handleHideDrawer={this.handleHideDrawer}>
           {isLoggedIn ? (
