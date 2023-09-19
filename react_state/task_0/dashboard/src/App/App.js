@@ -21,6 +21,7 @@ const styles2 = StyleSheet.create({
 }
 })
 
+
 class App extends React.Component {
  
 
@@ -33,10 +34,12 @@ class App extends React.Component {
 
 
   handleDisplayDrawer = () => {
+    const { displayDrawer } = this.state;
     this.setState({ displayDrawer: true });
   }
 
   handleHideDrawer = () => {
+    const { displayDrawer } = this.state;
     this.setState({ displayDrawer: false });
   }
 
@@ -47,7 +50,8 @@ class App extends React.Component {
           <Notifications listNotifications={listNotifications}/>
           <div className="App">
           <Header />
-          <div className={css(styles.body)} displayDrawer={this.displayDrawer}
+          <div className={css(styles.body)}
+          displayDrawer={displayDrawer}
           handleDisplayDrawer={this.handleDisplayDrawer}
           handleHideDrawer={this.handleHideDrawer}>
           {isLoggedIn ? (
